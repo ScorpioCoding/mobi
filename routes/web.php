@@ -21,3 +21,7 @@ Route::namespace('Frontend')->name('frontend.')->group(function(){
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/contact', 'ContactController@index')->name('contact');
 });
+
+Route::namespace('Backend')->name('backend.')->prefix('backend')->group(function(){
+    Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+});
