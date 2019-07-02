@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::namespace('Frontend')->name('frontend.')->group(function(){
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/about', 'AboutController@index')->name('about');
+    Route::get('/contact', 'ContactController@index')->name('contact');
 });
