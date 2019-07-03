@@ -25,3 +25,6 @@ Route::namespace('Frontend')->name('frontend.')->group(function(){
 Route::namespace('Backend')->name('backend.')->prefix('backend')->group(function(){
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
