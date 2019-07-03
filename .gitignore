@@ -14,8 +14,27 @@ composer.lock
 ###> npm ###
 /node_modules/*
 package-lock.json
+npm-debug.log
 ###< npm ###
 
 ###> yarn ###
 yarn.lock
+yarn-error.log
 ###< yarn ###
+
+###> homestead ###
+Homestead.json
+Homestead.yaml
+###< homestead ###
+
+###> phpunit ###
+.phpunit.result.cache
+###< phpunit ###
+
+###> laravel ###
+.env
+.env.backup
+/public/hot
+/public/storage
+/storage/*.key
+###< laravel ###
